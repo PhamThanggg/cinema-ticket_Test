@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/db_dat_ve?useSLL=false&serverTimezone=UTC  # Database URL
+    username: root  # Database username
+    password: huythang02  # Database password
+    driver-class-name: com.mysql.cj.jdbc.Driver  # MySQL driver class name
+  jpa:
+    hibernate:
+      ddl-auto: none  # Hibernate schema auto-update strategy
+    show-sql: true  # Show SQL queries in console
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect  # Hibernate dialect for MySQL 8
+        format_sql: true
+jwt:
+  expiration: 2592000 #30 ngày 30*24*60*60
+  secretKey: FccVY6XtV/8Hahbi+jLYisIz6JEV1Dakx3sN8844rrI=
+api:
+  prefix: api/v1
